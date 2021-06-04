@@ -1,1 +1,0 @@
-Mój nr zadania: 2 !!!

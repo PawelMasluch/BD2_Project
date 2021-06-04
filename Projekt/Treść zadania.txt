@@ -1,0 +1,13 @@
+Zadanie 2. Umowy cywilnoprawne
+System informatyczny ma służyć 
+do drukowania umów cywilnoprawnych 
+dla wykonawców - stałych współpracowników
+firmy. Umowy mogą być kilku rodzajów 
+(np. zlecenie, o dzieło), różniących się 
+pewnymi danymi, które trzeba umieścić na 
+wydruku. Każda umowa ma wykonawcę, 
+datę zawarcia, początek i koniec okresu 
+wykonania oraz temat i kwotę. 
+Dane wykonawców muszą zawierać 
+personalia, adres zamieszkania, PESEL 
+i NIP.
