@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_6" directorySegmentName="seg_0" id="7597CCC6-3EC0-A58C-9C73-536B68F498DF">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 19:45:04 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<targetTransferable>false</targetTransferable>
+<sourcePk>F13A81B9-436C-C326-D475-1D88E3651507</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>moze definiowac</nameOnSource>
+<nameOnTarget>dotyczy</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9AF11C90-5289-D6F2-E4F8-E85A5EFC201E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>90957D26-740E-D960-7050-E157C8AF31EB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

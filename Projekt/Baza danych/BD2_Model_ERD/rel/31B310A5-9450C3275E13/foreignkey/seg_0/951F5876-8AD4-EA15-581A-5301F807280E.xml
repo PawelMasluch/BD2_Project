@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="951F5876-8AD4-EA15-581A-5301F807280E" containerWithKeyObject="BC7A0C34-A99E-3C8E-9F0D-994272E92C27" localFKIndex="E07E14D1-77E7-0576-1EE9-C347C3E1AF65" name="DEFINICJA_ATRYBUTU_FK">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:23:54 UTC</createdTime>
+<generatorID>98661C65-224D-6371-F28A-B265DD38B620</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<referredTableLongName>DEFINICJA_ATRYBUTU</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FD293364-EAA5-D9D3-B311-B05A79D76FC1</referredTableID>
+<keyObject>D270B4BF-36F9-0FF2-DE71-1C673615D32C</keyObject>
+<referredKeyID>D270B4BF-36F9-0FF2-DE71-1C673615D32C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ATRYBUTU</refColNames>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

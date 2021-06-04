@@ -1,0 +1,197 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F05E9465-2818-33CA-1843-99C76EE0476E" name="UMOWA_CYWILNOPRAWNA">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 12:41:40 UTC</createdTime>
+<comment><![CDATA[Okreslamy dane, jakie ma kazda umowa cywilnoprawna.]]></comment>
+<generatorID>40BC3CBA-A099-A4FE-355A-C5EA7B4FA90D</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_RODZAJU" id="510BA62B-F8BC-6184-CD46-5D4B7EC86C62">
+<createdBy>User</createdBy>
+<createdTime>2020-12-08 07:45:33 UTC</createdTime>
+<generatorID>DE5B4A6B-FECD-EC23-DA9C-EA1B85FCE57D</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B60CCAF0-325A-FC65-F09C-D5EBF6BC8ECD" referredColumn="ACBC2EF5-2EFA-4537-73E6-31B9EDAB1A27"/>
+</associations>
+</Column>
+<Column name="ID_WYKONAWCY" id="FD3ECB9B-0447-80B9-33B2-D081FEBB92B1">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:23:54 UTC</createdTime>
+<generatorID>18110A18-EF9A-4264-0860-F5CAFC59A1E2</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="43859356-F5C5-D53F-265C-789A7D11A84C" referredColumn="1B29F2F6-D69D-B141-11EB-D0417AD57D37"/>
+</associations>
+</Column>
+<Column name="ID_UMOWY" id="8CEC7614-E270-4A4A-618E-F6CF254C0F22">
+<createdBy>User</createdBy>
+<createdTime>2020-12-08 07:45:33 UTC</createdTime>
+<generatorID>21A6A9A6-C0ED-5675-4A16-9FEB51D14DC9</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_UMOWY" id="779C0F2F-4D02-D8A1-F914-CF8260078B1B">
+<createdBy>User</createdBy>
+<createdTime>2020-12-08 07:45:33 UTC</createdTime>
+<generatorID>075DADBC-F8D4-B97F-C326-3B362A54EF1E</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_ZAWARCIA" id="B31D0FF0-06C1-2CFA-24F2-7E0306B4EE8C">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 12:41:40 UTC</createdTime>
+<generatorID>2C806234-0528-B283-06BA-EAA598441DE6</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KWOTA" id="6D8EF0C9-23AF-54B8-FA8C-CBE20FB17F6B">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 12:41:40 UTC</createdTime>
+<generatorID>0A2C7E0A-26B5-0BCD-1F25-A22C25CFACD5</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,9,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POCZATEK_WYKONANIA" id="B1F7B653-09FE-BE42-E971-584C8A45F286">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 12:41:40 UTC</createdTime>
+<generatorID>7560E0F6-8EA9-D893-EF6E-EF52E91DE41D</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KONIEC_WYKONANIA" id="6C6BFA5A-88EB-FD0C-484F-A67F9B09E02D">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 12:41:40 UTC</createdTime>
+<generatorID>241CC695-880D-9C1D-57FE-62FF7D3CC6E9</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEMAT" id="179942B3-D946-F7C4-687F-2A1E8573C6E8">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 12:41:40 UTC</createdTime>
+<generatorID>B3F33BAC-32F8-D88E-1064-DBCA1D7BC5EA</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DCA94856-CD05-2AAA-4BC8-18D178DB9397" name="UMOWA_CYWILNOPRAWNA_PK">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 17:28:58 UTC</createdTime>
+<generatorID>2CF3DFC7-7B21-BFD8-41F2-20F635A632CD</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="510BA62B-F8BC-6184-CD46-5D4B7EC86C62"/>
+<colUsage columnID="8CEC7614-E270-4A4A-618E-F6CF254C0F22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="326828D8-B8B5-036B-0544-36516D72CFC3" name="UMOWA_CYWILNOPRAWNA__UN">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 21:00:10 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8CEC7614-E270-4A4A-618E-F6CF254C0F22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F2A2D6B-FB38-6B58-332E-65B3CA4D9671" name="UMOWA_CYWILNOPRAWNA__IDX">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:33:24 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD3ECB9B-0447-80B9-33B2-D081FEBB92B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11AC79E4-72FB-C96B-E333-11F13322D5E3" name="WYKONAWCA_FK">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:23:54 UTC</createdTime>
+<generatorID>54584D02-5E67-2638-E1BB-22C7EBAF8C73</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD3ECB9B-0447-80B9-33B2-D081FEBB92B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCFA0E0D-3657-E190-87CB-1C1344AC8E0F" name="RODZAJ_UMOWY_FK">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:23:54 UTC</createdTime>
+<generatorID>DDCB0307-C2E0-6500-F86A-C2974FE153E5</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="510BA62B-F8BC-6184-CD46-5D4B7EC86C62"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="UMOWA_CYWILNOPRAWNA_CK_1" directorySegmentName="seg_0" id="F12B5935-063D-A826-1898-C1115CA4DADA">
+<createdBy>User</createdBy>
+<createdTime>2021-01-07 08:46:02 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<rule><![CDATA[poczatek_wykonania <= koniec_wykonania]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="UMOWA_CYWILNOPRAWNA_CK_2" directorySegmentName="seg_0" id="70A7AE96-5BB0-E0D1-96D3-FD17B31714D3">
+<createdBy>User</createdBy>
+<createdTime>2021-01-07 08:50:08 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<rule><![CDATA[data_zawarcia <= poczatek_wykonania]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

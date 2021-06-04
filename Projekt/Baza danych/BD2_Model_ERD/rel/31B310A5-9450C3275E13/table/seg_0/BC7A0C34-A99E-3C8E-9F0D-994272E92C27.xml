@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC7A0C34-A99E-3C8E-9F0D-994272E92C27" name="ATRYBUT_RODZAJU_UMOWY">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 20:49:08 UTC</createdTime>
+<generatorID>9AF11C90-5289-D6F2-E4F8-E85A5EFC201E</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_RODZAJU" id="52469C85-FD2D-D3F1-2258-F22E2F8F676A">
+<createdBy>User</createdBy>
+<createdTime>2020-12-08 07:45:33 UTC</createdTime>
+<generatorID>C98474B0-13D0-6402-DBF1-38A42E227C93</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="810CB9DA-02E6-A551-C41E-B24C60C6BC4E" referredColumn="ACBC2EF5-2EFA-4537-73E6-31B9EDAB1A27"/>
+</associations>
+</Column>
+<Column name="ID_ATRYBUTU" id="FD4176BC-7F7F-7FEB-4DE3-862404CD2186">
+<createdBy>User</createdBy>
+<createdTime>2020-12-08 07:45:33 UTC</createdTime>
+<generatorID>37716F90-2716-F899-8CDF-834DCFD583D1</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="951F5876-8AD4-EA15-581A-5301F807280E" referredColumn="B9C23437-281B-22D3-EA80-00FE6AA65E16"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="932F9CC2-D158-0A5B-BAB4-BFD482AA3D0B" name="ATRYBUT_RODZAJU_UMOWY_PK">
+<createdBy>User</createdBy>
+<createdTime>2020-12-08 07:45:33 UTC</createdTime>
+<generatorID>F13A81B9-436C-C326-D475-1D88E3651507</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52469C85-FD2D-D3F1-2258-F22E2F8F676A"/>
+<colUsage columnID="FD4176BC-7F7F-7FEB-4DE3-862404CD2186"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69210F3D-2D8B-BB80-6F4D-37205CB47538" name="ATRYBUT_RODZAJU_UMOWY_IDX">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:07:13 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD4176BC-7F7F-7FEB-4DE3-862404CD2186"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E07E14D1-77E7-0576-1EE9-C347C3E1AF65" name="DEFINICJA_ATRYBUTU_FK">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:23:54 UTC</createdTime>
+<generatorID>98661C65-224D-6371-F28A-B265DD38B620</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD4176BC-7F7F-7FEB-4DE3-862404CD2186"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="434DFA7F-FC39-D451-5DC0-41B6D121D1D5" name="RODZAJ_UMOWY_FKv2">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:23:54 UTC</createdTime>
+<generatorID>CB6D8CF3-9E81-9EA6-69E5-AD980C488E84</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52469C85-FD2D-D3F1-2258-F22E2F8F676A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

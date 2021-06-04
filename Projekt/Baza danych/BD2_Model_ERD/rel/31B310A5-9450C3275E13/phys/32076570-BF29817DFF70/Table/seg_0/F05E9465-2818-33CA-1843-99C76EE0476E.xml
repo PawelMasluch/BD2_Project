@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="UMOWA_CYWILNOPRAWNA" directorySegmentName="seg_0" id="F05E9465-2818-33CA-1843-99C76EE0476E">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TEMAT" id="179942B3-D946-F7C4-687F-2A1E8573C6E8">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_RODZAJU" id="510BA62B-F8BC-6184-CD46-5D4B7EC86C62">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="KONIEC_WYKONANIA" id="6C6BFA5A-88EB-FD0C-484F-A67F9B09E02D">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="KWOTA" id="6D8EF0C9-23AF-54B8-FA8C-CBE20FB17F6B">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_UMOWY" id="779C0F2F-4D02-D8A1-F914-CF8260078B1B">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_UMOWY" id="8CEC7614-E270-4A4A-618E-F6CF254C0F22">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POCZATEK_WYKONANIA" id="B1F7B653-09FE-BE42-E971-584C8A45F286">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_ZAWARCIA" id="B31D0FF0-06C1-2CFA-24F2-7E0306B4EE8C">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_WYKONAWCY" id="FD3ECB9B-0447-80B9-33B2-D081FEBB92B1">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:23:54 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UMOWA_CYWILNOPRAWNA__IDX" id="1F2A2D6B-FB38-6B58-332E-65B3CA4D9671">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:33:24 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<synonyms>
+<Synonym class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SynonymOraclev10g" name="UMOWA_CYWILNOPRAWNA" id="54C49E95-04F0-DC6E-072A-61F35F90EC04">
+<createdBy>User</createdBy>
+<createdTime>2021-01-11 17:56:14 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<objectName>UMOWA_CYWILNOPRAWNA</objectName>
+<objectUser>C6DE8F25-9082-C7B5-EB06-7CBC6528AB3A</objectUser>
+<user>82043D9D-5DFB-1173-96FD-A7FFC2259DB6</user>
+<referredObjectID>F05E9465-2818-33CA-1843-99C76EE0476E</referredObjectID>
+</Synonym>
+</synonyms>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="WYKONAWCA_FK" id="11AC79E4-72FB-C96B-E333-11F13322D5E3">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:23:54 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<deferrable>YES</deferrable>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="RODZAJ_UMOWY_FK" id="BCFA0E0D-3657-E190-87CB-1C1344AC8E0F">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:23:54 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<deferrable>YES</deferrable>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="UMOWA_CYWILNOPRAWNA_PK" id="DCA94856-CD05-2AAA-4BC8-18D178DB9397">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="UMOWA_CYWILNOPRAWNA_CK_2" id="70A7AE96-5BB0-E0D1-96D3-FD17B31714D3">
+<createdBy>User</createdBy>
+<createdTime>2021-01-07 08:50:08 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</TableCheckConstraint>
+<TableCheckConstraint name="UMOWA_CYWILNOPRAWNA_CK_1" id="F12B5935-063D-A826-1898-C1115CA4DADA">
+<createdBy>User</createdBy>
+<createdTime>2021-01-07 08:46:02 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</TableCheckConstraint>
+</tableCheckConstraints>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UMOWA_CYWILNOPRAWNA__UN" id="326828D8-B8B5-036B-0544-36516D72CFC3">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 21:00:10 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

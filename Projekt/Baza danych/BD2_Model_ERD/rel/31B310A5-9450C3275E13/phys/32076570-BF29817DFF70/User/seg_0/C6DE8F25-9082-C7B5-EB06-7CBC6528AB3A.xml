@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="BD2A31" directorySegmentName="seg_0" id="C6DE8F25-9082-C7B5-EB06-7CBC6528AB3A">
+<createdBy>User</createdBy>
+<createdTime>2021-01-11 01:02:02 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<identifier>058EBD1F891F662F3570867055909EC916</identifier>
+</UserOraclev10g>

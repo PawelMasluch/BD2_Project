@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="RODZAJ_UMOWY" directorySegmentName="seg_0" id="B65D8762-3B31-2437-793B-B3AD287D3F90">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="OPIS" id="837424B1-A0AF-F40D-9F51-52A3D9C90118">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_RODZAJU" id="ACBC2EF5-2EFA-4537-73E6-31B9EDAB1A27">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAZWA" id="F7D99045-89A0-31FB-F121-282E4F6A6830">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<synonyms>
+<Synonym class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SynonymOraclev10g" name="RODZAJ_UMOWY" id="417E02B1-2656-16AD-BA03-872B18D39863">
+<createdBy>User</createdBy>
+<createdTime>2021-01-11 17:55:48 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<objectName>RODZAJ_UMOWY</objectName>
+<objectUser>C6DE8F25-9082-C7B5-EB06-7CBC6528AB3A</objectUser>
+<user>82043D9D-5DFB-1173-96FD-A7FFC2259DB6</user>
+<referredObjectID>B65D8762-3B31-2437-793B-B3AD287D3F90</referredObjectID>
+</Synonym>
+</synonyms>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="RODZAJ_UMOWY_PK" id="5496766B-F7EA-2C7D-748C-45096D1FB826">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="RODZAJ_UMOWY_NAZWA_UN" id="A9609A1E-DE76-5538-2E97-9FA3E9CF4965">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

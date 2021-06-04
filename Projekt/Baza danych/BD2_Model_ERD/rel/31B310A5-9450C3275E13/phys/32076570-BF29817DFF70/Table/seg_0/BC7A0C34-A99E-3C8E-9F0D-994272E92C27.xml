@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="ATRYBUT_RODZAJU_UMOWY" directorySegmentName="seg_0" id="BC7A0C34-A99E-3C8E-9F0D-994272E92C27">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_RODZAJU" id="52469C85-FD2D-D3F1-2258-F22E2F8F676A">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ATRYBUTU" id="FD4176BC-7F7F-7FEB-4DE3-862404CD2186">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ATRYBUT_RODZAJU_UMOWY_IDX" id="69210F3D-2D8B-BB80-6F4D-37205CB47538">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<synonyms>
+<Synonym class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SynonymOraclev10g" name="ATRYBUT_RODZAJU_UMOWY" id="30BA3B51-6332-3F27-B74A-9A94DA5CC58B">
+<createdBy>User</createdBy>
+<createdTime>2021-01-11 17:54:57 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<objectName>ATRYBUT_RODZAJU_UMOWY</objectName>
+<objectUser>C6DE8F25-9082-C7B5-EB06-7CBC6528AB3A</objectUser>
+<user>82043D9D-5DFB-1173-96FD-A7FFC2259DB6</user>
+<referredObjectID>BC7A0C34-A99E-3C8E-9F0D-994272E92C27</referredObjectID>
+</Synonym>
+</synonyms>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="RODZAJ_UMOWY_FKv2" id="434DFA7F-FC39-D451-5DC0-41B6D121D1D5">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:23:54 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<deferrable>YES</deferrable>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DEFINICJA_ATRYBUTU_FK" id="E07E14D1-77E7-0576-1EE9-C347C3E1AF65">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:23:54 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<deferrable>YES</deferrable>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ATRYBUT_RODZAJU_UMOWY_PK" id="932F9CC2-D158-0A5B-BAB4-BFD482AA3D0B">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

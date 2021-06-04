@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="90957D26-740E-D960-7050-E157C8AF31EB" name="WARTOSC ATRYBUTU">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 13:52:01 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="WARTOSC" id="231A5788-B71A-721B-48DA-EF7360AEFAB7">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 16:40:13 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID RODZAJU1" id="1421F352-37FF-BDCB-0FB4-1D994F5D339E">
+<createdBy>User</createdBy>
+<createdTime>2020-12-05 14:10:49 UTC</createdTime>
+<generatorID>7597CCC6-3EC0-A58C-9C73-536B68F498DF</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<referedAttribute>C98474B0-13D0-6402-DBF1-38A42E227C93</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID ATRYBUTU" id="64255FFF-2FE2-8035-CF32-51F5BA0F1182">
+<createdBy>User</createdBy>
+<createdTime>2020-12-05 14:10:49 UTC</createdTime>
+<generatorID>7597CCC6-3EC0-A58C-9C73-536B68F498DF</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<referedAttribute>37716F90-2716-F899-8CDF-834DCFD583D1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID RODZAJU" id="5A9BA09B-91D3-16F1-ACA0-A3E319CA4F74">
+<createdBy>User</createdBy>
+<createdTime>2021-01-02 12:19:33 UTC</createdTime>
+<generatorID>8A38CE43-E7C7-38AD-0663-76A4CCDD65B8</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<referedAttribute>DE5B4A6B-FECD-EC23-DA9C-EA1B85FCE57D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID UMOWY" id="97C9F121-5011-2418-3807-A95D9B34EFE7">
+<createdBy>User</createdBy>
+<createdTime>2021-01-02 12:19:33 UTC</createdTime>
+<generatorID>8A38CE43-E7C7-38AD-0663-76A4CCDD65B8</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<referedAttribute>21A6A9A6-C0ED-5675-4A16-9FEB51D14DC9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A3661953-1B92-033E-47E2-3B81E401AE26" name="WARTOSC ATRYBUTU PK">
+<createdBy>User</createdBy>
+<createdTime>2020-12-05 13:49:04 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1421F352-37FF-BDCB-0FB4-1D994F5D339E</attributeRef>
+<attributeRef>64255FFF-2FE2-8035-CF32-51F5BA0F1182</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,337 @@
+
+Session altered.
+
+
+Error starting at line : 12 in command -
+INSERT INTO wykonawca VALUES (null, '9516966753', null, '16B', 20, '00-001', 'Warszawa', 'Polska', 'Jan', 'Kowalski', '01/12/1978', '78120118701')
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."WYKONAWCA"."ULICA")
+
+
+Error starting at line : 13 in command -
+INSERT INTO wykonawca VALUES (102, null, 'Polna', 24, null, null, 'Kraków', null, 'Piotr', 'Nowak', '27/11/1965', '65112709098')
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."WYKONAWCA"."KOD_POCZTOWY")
+
+
+Error starting at line : 14 in command -
+INSERT INTO wykonawca VALUES (103, '9214498124', 'Leœna', '11C', 56, '07-232', 'Szczecin', 'Polska', 'Anna', 'Krakowska', '16/09/1982', '82091600919')
+Error report -
+ORA-00001: naruszono wiêzy unikatowe (BD2A31.WYKONAWCA_PK)
+
+
+Error starting at line : 15 in command -
+INSERT INTO wykonawca VALUES (104, '9472896694', 'S³oneczna', '1F', 67, '06-198', null, 'Polska', 'Marcin', 'Komorowski', '17/05/1971', '71051718976')
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."WYKONAWCA"."MIEJSCOWOSC")
+
+
+Error starting at line : 16 in command -
+INSERT INTO wykonawca VALUES (105, '9232787887', 'Szkolna', '7J', 80, '47-141', 'Rzeszów', 'Polska', null, 'Jowialska', null, '66081901865')
+Error report -
+ORA-00001: naruszono wiêzy unikatowe (BD2A31.WYKONAWCA_PK)
+
+
+Error starting at line : 17 in command -
+INSERT INTO wykonawca VALUES (106, null, 'Krótka', '101A', 145, '23-887', 'Olsztyn', null, 'Adam', 8, '01/08/1990', '90080110987')
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."WYKONAWCA"."KRAJ")
+
+
+Error starting at line : 18 in command -
+INSERT INTO wykonawca VALUES (107, null, 'D³uga', 15, 'Ananasowa', '01-564', 88, 'Polska', 'Sebastian', 'Cieœlak', '28/02/1987', '87022844556')
+Error report -
+ORA-01722: niepoprawna liczba
+
+
+Error starting at line : 19 in command -
+INSERT INTO wykonawca VALUES (108, '9678758585', 'Lipowa', 167, 80, '76-909', null, null, 'Andrzej', 'Kaniowski', null, '65012379910')
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."WYKONAWCA"."MIEJSCOWOSC")
+
+
+Error starting at line : 20 in command -
+INSERT INTO wykonawca VALUES (108, '9678758585', 'Lipowa', 167, 80, '76-909', 'aaa', 'aaa', 'Andrzej', 'Kaniowski', null, '65012379910000000000')
+Error report -
+ORA-12899: wartoœæ zbyt du¿a dla kolumny "BD2A31"."WYKONAWCA"."PESEL" (obecna: 20, maksymalna: 11)
+
+
+Error starting at line : 31 in command -
+INSERT INTO rodzaj_umowy VALUES (201, 'Umowa przechowania', 'Umowa ta okreœla m.in. sposób przechowania pewnej rzeczy.')
+Error report -
+ORA-00001: naruszono wiêzy unikatowe (BD2A31.RODZAJ_UMOWY_PK)
+
+
+Error starting at line : 32 in command -
+INSERT INTO rodzaj_umowy VALUES (300, 'Umowa sprzeda¿y samochodu', 'Umowa ta okreœla m.in. parametry samochodu podlegajacego sprzedazy.')
+Error report -
+ORA-00001: naruszono wiêzy unikatowe (BD2A31.RODZAJ_UMOWY_NAZWA_UN)
+
+
+Error starting at line : 42 in command -
+INSERT INTO definicja_atrybutu VALUES (301, 'abcd', 'T', 'N', 'Wysokoœæ kary za niedotrzymanie terminu umowy lub inne uchybienia.')
+Error report -
+ORA-00001: naruszono wiêzy unikatowe (BD2A31.DEFINICJA_ATRYBUTU_PK)
+
+
+Error starting at line : 43 in command -
+INSERT INTO definicja_atrybutu VALUES (333, 'Nazwa banku', 'T', 'C', 'Nazwa banku, w którym znajduje siê konto, na które ma byæ uiszczona kwota zawarta w umowie.')
+Error report -
+ORA-00001: naruszono wiêzy unikatowe (BD2A31.DEFINICJA_ATRYBUTU_NAZWA_UN)
+
+
+Error starting at line : 44 in command -
+INSERT INTO definicja_atrybutu VALUES (303, null, 'T', 'C', 'Numer rachunku bankowego, na które ma byæ uiszczona kwota zawarta w umowie.')
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."DEFINICJA_ATRYBUTU"."NAZWA")
+
+
+Error starting at line : 45 in command -
+INSERT INTO definicja_atrybutu VALUES (304, 'Przedmiot przechowania', null, 'C', 'Przedmiot, jaki zostanie przechowany.')
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."DEFINICJA_ATRYBUTU"."CZY_OPCJONALNA")
+
+
+Error starting at line : 46 in command -
+INSERT INTO definicja_atrybutu VALUES (305, 'Miejsce przechowania', 'N', null, 'Adres, pod którym bêdzie przechowany przedmiot zawarty w umowie.')
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."DEFINICJA_ATRYBUTU"."TYP_DANYCH")
+
+
+Error starting at line : 47 in command -
+INSERT INTO definicja_atrybutu VALUES (null, 'Miejsce przechowania', 'N', null, 'Adres, pod którym bêdzie przechowany przedmiot zawarty w umowie.')
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."DEFINICJA_ATRYBUTU"."TYP_DANYCH")
+
+
+Error starting at line : 48 in command -
+INSERT INTO definicja_atrybutu VALUES (351, 'abcd', 'Q', 'N', 'Wysokoœæ kary za niedotrzymanie terminu umowy lub inne uchybienia.')
+Error report -
+ORA-02290: naruszono wiêzy CHECK (BD2A31.DEF_ATR_CZY_OPCJONALNA_CK)
+
+
+Session altered.
+
+
+Error starting at line : 62 in command -
+INSERT INTO umowa_cywilnoprawna VALUES (201, 101, 401, '6/2015', '04/11/2015', 1500.04, '08/01/2016', '15/01/2016', 'Przechowanie ciagnika siodlowego')
+Error report -
+ORA-00001: naruszono wiêzy unikatowe (BD2A31.UMOWA_CYWILNOPRAWNA_PK)
+
+
+Error starting at line : 63 in command -
+INSERT INTO umowa_cywilnoprawna VALUES (203, 102, 402, null, '15/02/2014', 7500, '20/02/2014', '31/12/2014', 'Po¿yczka na telewizor')
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."UMOWA_CYWILNOPRAWNA"."NR_UMOWY")
+
+
+Error starting at line : 64 in command -
+INSERT INTO umowa_cywilnoprawna VALUES (null, 103, 403, '3/2000', '07/07/2000', 8876.45, '08/07/2000', '31/12/2003', 'Zbudowanie altany')
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."UMOWA_CYWILNOPRAWNA"."ID_RODZAJU")
+
+
+Error starting at line : 65 in command -
+INSERT INTO umowa_cywilnoprawna VALUES (205, null, 404, '2/2018', '03/04/2018', 1234.56, '03/04/2018', '03/04/2018', 'Darowizna zegarka')
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."UMOWA_CYWILNOPRAWNA"."ID_WYKONAWCY")
+
+
+Error starting at line : 66 in command -
+INSERT INTO umowa_cywilnoprawna VALUES (206, 105, 405, '6/1999', '18/08/1999', 100000.09, '01/09/1999', '30/06/2000', null)
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."UMOWA_CYWILNOPRAWNA"."TEMAT")
+
+
+Error starting at line : 67 in command -
+INSERT INTO umowa_cywilnoprawna VALUES (208, 106, 406, '9/2005', '15/12/2005', 500.99, '01/01/2006', null, 'Dzier¿awa traktora')
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."UMOWA_CYWILNOPRAWNA"."KONIEC_WYKONANIA")
+
+
+Error starting at line : 68 in command -
+INSERT INTO umowa_cywilnoprawna VALUES (209, 107, 407, '11/2003', '17/11/2003', 3000.99, null, '31/12/2003', 'Dostawa tysiaca palet jaj')
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."UMOWA_CYWILNOPRAWNA"."POCZATEK_WYKONANIA")
+
+
+Error starting at line : 69 in command -
+INSERT INTO umowa_cywilnoprawna VALUES (201, 101, 410, '6/2015', '04/11/2015', 1500.04, '08/01/2000', '15/01/2016', 'Przechowanie ciagnika siodlowego')
+Error report -
+ORA-02290: naruszono wiêzy CHECK (BD2A31.UMOWA_CYWILNOPRAWNA_CK_2)
+
+
+Error starting at line : 70 in command -
+INSERT INTO umowa_cywilnoprawna VALUES (201, 101, 401, '6/2015', '04/11/2015', 1500.04, '08/01/2016', '15/01/2012', 'Przechowanie ciagnika siodlowego')
+Error report -
+ORA-00001: naruszono wiêzy unikatowe (BD2A31.UMOWA_CYWILNOPRAWNA_PK)
+
+
+Error starting at line : 79 in command -
+INSERT INTO atrybut_rodzaju_umowy VALUES (null, 301)
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."ATRYBUT_RODZAJU_UMOWY"."ID_RODZAJU")
+
+
+Error starting at line : 80 in command -
+INSERT INTO atrybut_rodzaju_umowy VALUES (201, null)
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."ATRYBUT_RODZAJU_UMOWY"."ID_ATRYBUTU")
+
+
+Error starting at line : 81 in command -
+INSERT INTO atrybut_rodzaju_umowy VALUES (201, 303)
+Error report -
+ORA-00001: naruszono wiêzy unikatowe (BD2A31.ATRYBUT_RODZAJU_UMOWY_PK)
+
+
+Error starting at line : 82 in command -
+INSERT INTO atrybut_rodzaju_umowy VALUES (201, 'aaa')
+Error report -
+ORA-01722: niepoprawna liczba
+
+
+Error starting at line : 83 in command -
+INSERT INTO atrybut_rodzaju_umowy VALUES (9.5, 305)
+Error report -
+ORA-02291: naruszono wiêzy spójnoœci (BD2A31.RODZAJ_UMOWY_FKV2) - nie znaleziono klucza nadrzêdnego
+
+
+Error starting at line : 94 in command -
+INSERT INTO wartosc_atrybutu VALUES (null, 401, 304, 'Traktor Ursus')
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."WARTOSC_ATRYBUTU"."ID_RODZAJU")
+
+
+Error starting at line : 95 in command -
+INSERT INTO wartosc_atrybutu VALUES (201, null, 305, 'ul. Dobra 64, 07-232 Warszawa')
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."WARTOSC_ATRYBUTU"."ID_UMOWY")
+
+
+Error starting at line : 96 in command -
+INSERT INTO wartosc_atrybutu VALUES (203, 402, null, '450.00 zl')
+Error report -
+ORA-01400: nie mo¿na wstawiæ wartoœci NULL do ("BD2A31"."WARTOSC_ATRYBUTU"."ID_ATRYBUTU")
+
+
+Error starting at line : 97 in command -
+INSERT INTO wartosc_atrybutu VALUES (203, 500, 302, null)
+Error report -
+ORA-02291: naruszono wiêzy spójnoœci (BD2A31.UMOWA_CYWILNOPRAWNA_FK) - nie znaleziono klucza nadrzêdnego
+
+
+Error starting at line : 101 in command -
+UPDATE wykonawca SET id_wykonawcy = 106 WHERE id_wykonawcy = 101
+Error report -
+ORA-00001: naruszono wiêzy unikatowe (BD2A31.WYKONAWCA_PK)
+
+
+Error starting at line : 102 in command -
+UPDATE wykonawca SET kraj = null
+Error report -
+ORA-01407: nie mo¿na zaktualizowaæ ("BD2A31"."WYKONAWCA"."KRAJ") do wartoœci NULL
+
+
+Error starting at line : 103 in command -
+UPDATE wykonawca set numer_domu = null
+Error at Command Line : 103 Column : 22
+Error report -
+SQL Error: ORA-00904: "NUMER_DOMU": niepoprawny identyfikator
+00904. 00000 -  "%s: invalid identifier"
+*Cause:    
+*Action:
+
+Error starting at line : 105 in command -
+UPDATE umowa_cywilnoprawna SET id_wykonawcy = 104 WHERE id_wykonawcy = 401
+Error report -
+ORA-20225: Non Transferable FK constraint  on table UMOWA_CYWILNOPRAWNA is violated
+ORA-06512: przy "BD2A31.FKNTM_UMOWA_CYWILNOPRAWNA", linia 2
+ORA-04088: b³¹d w trakcie wykonywania wyzwalacza 'BD2A31.FKNTM_UMOWA_CYWILNOPRAWNA'
+
+
+Error starting at line : 106 in command -
+UPDATE umowa_cywilnoprawna SET kwota = 'abd'
+Error report -
+ORA-01722: niepoprawna liczba
+
+
+Error starting at line : 107 in command -
+UPDATE umowa_cywilnoprawna set id_rodzaju = 999
+Error report -
+ORA-20225: Non Transferable FK constraint  on table UMOWA_CYWILNOPRAWNA is violated
+ORA-06512: przy "BD2A31.FKNTM_UMOWA_CYWILNOPRAWNA", linia 2
+ORA-04088: b³¹d w trakcie wykonywania wyzwalacza 'BD2A31.FKNTM_UMOWA_CYWILNOPRAWNA'
+
+
+Error starting at line : 109 in command -
+UPDATE definicja_atrybutu SET nazwa = 'Nr silnika'
+Error report -
+ORA-00001: naruszono wiêzy unikatowe (BD2A31.DEFINICJA_ATRYBUTU_NAZWA_UN)
+
+
+Error starting at line : 110 in command -
+UPDATE definicja_atrybutu SET typ_danych = 'H'
+Error report -
+ORA-02290: naruszono wiêzy CHECK (BD2A31.DEF_ATR_TYP_DANYCH_CK)
+
+
+Error starting at line : 111 in command -
+UPDATE definicja_atrybutu set czy_opcjonalna = 'Q'
+Error report -
+ORA-02290: naruszono wiêzy CHECK (BD2A31.DEF_ATR_CZY_OPCJONALNA_CK)
+
+
+Error starting at line : 113 in command -
+UPDATE wartosc_atrybutu SET id_rodzaju = 444
+Error report -
+ORA-20225: Non Transferable FK constraint  on table WARTOSC_ATRYBUTU is violated
+ORA-06512: przy "BD2A31.FKNTM_WARTOSC_ATRYBUTU", linia 2
+ORA-04088: b³¹d w trakcie wykonywania wyzwalacza 'BD2A31.FKNTM_WARTOSC_ATRYBUTU'
+
+
+Error starting at line : 114 in command -
+UPDATE wartosc_atrybutu SET id_umowy = 1
+Error report -
+ORA-20225: Non Transferable FK constraint  on table WARTOSC_ATRYBUTU is violated
+ORA-06512: przy "BD2A31.FKNTM_WARTOSC_ATRYBUTU", linia 2
+ORA-04088: b³¹d w trakcie wykonywania wyzwalacza 'BD2A31.FKNTM_WARTOSC_ATRYBUTU'
+
+
+Error starting at line : 115 in command -
+UPDATE wartosc_atrybutu set id_atrybutu = 888
+Error report -
+ORA-20225: Non Transferable FK constraint  on table WARTOSC_ATRYBUTU is violated
+ORA-06512: przy "BD2A31.FKNTM_WARTOSC_ATRYBUTU", linia 2
+ORA-04088: b³¹d w trakcie wykonywania wyzwalacza 'BD2A31.FKNTM_WARTOSC_ATRYBUTU'
+
+
+Error starting at line : 117 in command -
+UPDATE rodzaj_umowy SET nazwa = 'Umowa darowizny'
+Error report -
+ORA-00001: naruszono wiêzy unikatowe (BD2A31.RODZAJ_UMOWY_NAZWA_UN)
+
+
+Error starting at line : 118 in command -
+UPDATE rodzaj_umowy SET id_rodzaju = 999
+Error report -
+ORA-00001: naruszono wiêzy unikatowe (BD2A31.RODZAJ_UMOWY_PK)
+
+
+Error starting at line : 123 in command -
+DELETE FROM wykonawca where id_wykonawcy = 101
+Error report -
+ORA-02292: naruszono wiêzy spójnoœci (BD2A31.WYKONAWCA_FK) - znaleziono rekord podrzêdny
+
+
+Error starting at line : 124 in command -
+DELETE FROM rodzaj_umowy
+Error report -
+ORA-02292: naruszono wiêzy spójnoœci (BD2A31.RODZAJ_UMOWY_FK) - znaleziono rekord podrzêdny
+
+
+Error starting at line : 125 in command -
+DELETE FROM definicja_atrybutu where czy_opcjonalna = 'T'
+Error report -
+ORA-02292: naruszono wiêzy spójnoœci (BD2A31.DEFINICJA_ATRYBUTU_FK) - znaleziono rekord podrzêdny
+

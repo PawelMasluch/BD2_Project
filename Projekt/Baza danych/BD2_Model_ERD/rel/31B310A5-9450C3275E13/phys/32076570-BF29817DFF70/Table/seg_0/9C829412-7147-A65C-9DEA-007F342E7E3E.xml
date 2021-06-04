@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="WYKONAWCA" directorySegmentName="seg_0" id="9C829412-7147-A65C-9DEA-007F342E7E3E">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MIEJSCOWOSC" id="0FDD9743-F1D9-2269-3CBF-286970A29F15">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_WYKONAWCY" id="1B29F2F6-D69D-B141-11EB-D0417AD57D37">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IMIE" id="3DFB9F01-B107-F5CA-C712-5DB741F1356B">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 17:56:01 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="KOD_POCZTOWY" id="4541B2E8-18DC-4B0D-4379-3A3BA4C35C4C">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_URODZENIA" id="492D632F-436C-D5D1-B38E-C950CCDF67EA">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 17:56:01 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAZWISKO" id="AF248F47-CE34-D7C9-B6EC-394B6AFBC7C4">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 17:56:01 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_MIESZKANIA" id="B624FBB3-E263-8165-DC08-7FCEB266ED4C">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PESEL" id="CA5326CA-5FE9-19A7-C79D-06A33AC0C9EF">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 17:56:01 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ULICA" id="DB1B5811-7247-8110-D7F7-388BC830235D">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NIP" id="DC3FC30E-61E4-43C7-19FB-CF1E304DD0A6">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="KRAJ" id="E0FF9DF1-D5E1-7C1B-2EBF-392F859030D4">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_DOMU" id="E13954DB-1385-28CF-66EA-89E52C44C0D3">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<synonyms>
+<Synonym class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SynonymOraclev10g" name="WYKONAWCA" id="94A0F16D-E984-11D9-DA0B-81E98674AF86">
+<createdBy>User</createdBy>
+<createdTime>2021-01-11 17:52:59 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<objectName>WYKONAWCA</objectName>
+<objectUser>C6DE8F25-9082-C7B5-EB06-7CBC6528AB3A</objectUser>
+<user>82043D9D-5DFB-1173-96FD-A7FFC2259DB6</user>
+<referredObjectID>9C829412-7147-A65C-9DEA-007F342E7E3E</referredObjectID>
+</Synonym>
+</synonyms>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="WYKONAWCA_PK" id="E8085C3E-CE94-3B4F-620E-5B94EA830FC2">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

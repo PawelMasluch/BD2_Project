@@ -1,0 +1,283 @@
+SQL> 
+SQL> 
+SQL> 
+SQL> --------------------------------
+SQL> 
+SQL> 
+SQL> 
+SQL> select imie, nazwisko, data_zawarcia, temat
+  2  from wykonawca join umowa_cywilnoprawna using (id_wykonawcy) 
+  3  where NIP is not null 
+  4  order by ulica desc;
+
+IMIE                                               NAZWISKO                                                                                             DATA_ZAW
+-------------------------------------------------- ---------------------------------------------------------------------------------------------------- --------
+TEMAT                                                                                                                                                                                                                                                                                                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Jowita                                             Jowialska                                                                                            99/08/18 
+Wynajem luksusowego apartamentu                                                                                                                                                                                                                                                                             
+
+Marcin                                             Komorowski                                                                                           18/04/03 
+Darowizna zegarka                                                                                                                                                                                                                                                                                           
+
+Anna                                               Krakowska                                                                                            00/07/07 
+Zbudowanie altany                                                                                                                                                                                                                                                                                           
+
+Jan                                                Kowalski                                                                                             15/11/04 
+Przechowanie ciagnika siodlowego                                                                                                                                                                                                                                                                            
+
+Sebastian                                          Cieœlak                                                                                              03/11/17 
+Dostawa tysiaca palet jaj                                                                                                                                                                                                                                                                                   
+
+
+SQL> 
+SQL> -------
+SQL> 
+SQL> select imie, nazwisko, NIP, data_urodzenia 
+  2  from wykonawca 
+  3  where imie like 'J%';
+
+IMIE                                               NAZWISKO                                                                                             NIP        DATA_URO
+-------------------------------------------------- ---------------------------------------------------------------------------------------------------- ---------- --------
+Jan                                                Kowalski                                                                                             9516966753 78/12/01
+Jowita                                             Jowialska                                                                                            9232787887 66/08/19
+
+SQL> 
+SQL> -------
+SQL> 
+SQL> select * 
+  2  from rodzaj_umowy
+  3  where nazwa like 'Nazwa%' or nazwa like '%lokalu%';
+
+ID_RODZAJU NAZWA
+---------- ----------------------------------------------------------------------------------------------------
+OPIS                                                                                                                                                                                                                                                                                                        
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+       206 Umowa najmu lokalu mieszkalnego                                                                      
+Umowa ta okreœla m.in. okres najmu i czynsz.                                                                                                                                                                                                                                                                
+
+
+SQL> 
+SQL> -------
+SQL> 
+SQL> select * 
+  2  from definicja_atrybutu
+  3  where nazwa like 'Nr%'
+  4  order by id_atrybutu desc;
+
+ID_ATRYBUTU NAZWA                                                                                                C T
+----------- ---------------------------------------------------------------------------------------------------- - -
+OPIS                                                                                                                                                                                                                                                                                                        
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        312 Nr silnika                                                                                           N C 
+Numer silnika sprzedawanego samochodu.                                                                                                                                                                                                                                                                      
+
+        311 Nr karty pojazdu                                                                                     N C 
+Numer karty pojazdu sprzedawanego samochodu.                                                                                                                                                                                                                                                                
+
+        310 Nr nadwozia                                                                                          N C 
+Numer nadwozia sprzedawanego samochodu.                                                                                                                                                                                                                                                                     
+
+        309 Nr rejestracyjny                                                                                     N C 
+Numer rejestracyjny sprzedawanego samochodu.                                                                                                                                                                                                                                                                
+
+        303 Nr rachunku bankowego                                                                                T C 
+Numer rachunku bankowego, na które ma byæ uiszczona kwota zawarta w umowie.                                                                                                                                                                                                                                 
+
+
+SQL> 
+SQL> -------
+SQL> select * 
+  2  from definicja_atrybutu 
+  3  where nazwa LIKE 'P%' 
+  4  order by id_atrybutu asc;
+
+ID_ATRYBUTU NAZWA                                                                                                C T
+----------- ---------------------------------------------------------------------------------------------------- - -
+OPIS                                                                                                                                                                                                                                                                                                        
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        304 Przedmiot przechowania                                                                               N C 
+Przedmiot, jaki zostanie przechowany.                                                                                                                                                                                                                                                                       
+
+        316 Przedmiot darowizny                                                                                  N C 
+Przedmiot darowizny, o którym mowa w umowie.                                                                                                                                                                                                                                                                
+
+        318 Powierzchnia u¿ytkowa                                                                                N N 
+Powierzchnia u¿ytkowa wynajmowanego lokalu mieszkalnego.                                                                                                                                                                                                                                                    
+
+        322 Przedmiot dzier¿awy                                                                                  N C 
+Przedmiot, jaki zostanie wydzier¿awiony.                                                                                                                                                                                                                                                                    
+
+
+SQL> 
+SQL> -------
+SQL> 
+SQL> select nr_umowy, data_zawarcia, poczatek_wykonania, temat 
+  2  from umowa_cywilnoprawna
+  3  where (kwota > 1000 and kwota < 5000) or extract(year from poczatek_wykonania) < 2008
+  4  order by data_zawarcia;
+
+NR_UMOWY                                                                                             DATA_ZAW POCZATEK
+---------------------------------------------------------------------------------------------------- -------- --------
+TEMAT                                                                                                                                                                                                                                                                                                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6/1999                                                                                               99/08/18 99/09/01 
+Wynajem luksusowego apartamentu                                                                                                                                                                                                                                                                             
+
+3/2000                                                                                               00/07/07 00/07/08 
+Zbudowanie altany                                                                                                                                                                                                                                                                                           
+
+11/2003                                                                                              03/11/17 03/12/01 
+Dostawa tysiaca palet jaj                                                                                                                                                                                                                                                                                   
+
+9/2005                                                                                               05/12/15 06/01/01 
+Dzier¿awa traktora                                                                                                                                                                                                                                                                                          
+
+6/2015                                                                                               15/11/04 16/01/08 
+Przechowanie ciagnika siodlowego                                                                                                                                                                                                                                                                            
+
+2/2018                                                                                               18/04/03 18/04/03 
+Darowizna zegarka                                                                                                                                                                                                                                                                                           
+
+
+6 rows selected. 
+
+SQL> 
+SQL> -------
+SQL> 
+SQL> select * 
+  2  from wartosc_atrybutu 
+  3  where id_umowy = 300;
+no rows selected
+SQL> 
+SQL> -------
+SQL> 
+SQL> select id_rodzaju, count(*) as ile_atrybutow_charakterystycznych
+  2  from atrybut_rodzaju_umowy 
+  3  group by id_rodzaju 
+  4  having count(*) > 4 
+  5  order by 2 asc, 1 asc;
+
+ID_RODZAJU ILE_ATRYBUTOW_CHARAKTERYSTYCZNYCH
+---------- ---------------------------------
+       201                                 5
+       204                                 5
+       206                                 5
+       202                                 9
+
+SQL> 
+SQL> -------
+SQL> 
+SQL> select rodz_umowy.nazwa as nazwa_umowy, def_atr.nazwa as nazwa_atrybutu
+  2  from rodzaj_umowy rodz_umowy join atrybut_rodzaju_umowy atr_rodz_umowy using (id_rodzaju) join definicja_atrybutu def_atr using (id_atrybutu)
+  3  where rodz_umowy.nazwa like '%da%';
+
+NAZWA_UMOWY                                                                                          NAZWA_ATRYBUTU                                                                                      
+---------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
+Umowa sprzeda¿y samochodu                                                                            Nazwa banku                                                                                         
+Umowa sprzeda¿y samochodu                                                                            Nr rachunku bankowego                                                                               
+Umowa sprzeda¿y samochodu                                                                            Nazwa samochodu                                                                                     
+Umowa sprzeda¿y samochodu                                                                            Typ samochodu                                                                                       
+Umowa sprzeda¿y samochodu                                                                            Rok produkcji                                                                                       
+Umowa sprzeda¿y samochodu                                                                            Nr rejestracyjny                                                                                    
+Umowa sprzeda¿y samochodu                                                                            Nr nadwozia                                                                                         
+Umowa sprzeda¿y samochodu                                                                            Nr karty pojazdu                                                                                    
+Umowa sprzeda¿y samochodu                                                                            Nr silnika                                                                                          
+Umowa darowizny                                                                                      Przedmiot darowizny                                                                                 
+
+10 rows selected. 
+
+SQL> 
+SQL> -------
+SQL> 
+SQL> select distinct id_atrybutu, id_umowy as ID_UMOWY, umowa_cywpraw.nr_umowy as NR_UMOWY, umowa_cywpraw.data_zawarcia as DATA_ZAWARCIA, umowa_cywpraw.temat as TEMAT_UMOWY, def_atr.nazwa as NAZWA_ATRYBUTU, wart_atr.wartosc as WARTOSC_ATRYBUTU
+  2  from umowa_cywilnoprawna umowa_cywpraw join wartosc_atrybutu wart_atr using (id_umowy) join atrybut_rodzaju_umowy atr_rodz_umowy using (id_atrybutu) join definicja_atrybutu def_atr using (id_atrybutu)
+  3  order by id_umowy asc, id_atrybutu asc;
+
+ID_ATRYBUTU   ID_UMOWY NR_UMOWY                                                                                             DATA_ZAW
+----------- ---------- ---------------------------------------------------------------------------------------------------- --------
+TEMAT_UMOWY
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NAZWA_ATRYBUTU                                                                                       WARTOSC_ATRYBUTU                                                                                    
+---------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
+        304        401 6/2015                                                                                               15/11/04 
+Przechowanie ciagnika siodlowego                                                                                                                                                                                                                                                                            
+Przedmiot przechowania                                                                               Traktor Ursus                                                                                       
+
+        305        401 6/2015                                                                                               15/11/04 
+Przechowanie ciagnika siodlowego                                                                                                                                                                                                                                                                            
+Miejsce przechowania                                                                                 ul. Dobra 64, 07-232 Warszawa                                                                       
+
+        302        402 1/2014                                                                                               14/02/15 
+Po¿yczka na telewizor                                                                                                                                                                                                                                                                                       
+Nazwa banku                                                                                          Przyjazny Bank                                                                                      
+
+        303        402 1/2014                                                                                               14/02/15 
+Po¿yczka na telewizor                                                                                                                                                                                                                                                                                       
+Nr rachunku bankowego                                                                                24 0987 0000 0000 1234 1234 0009                                                                    
+
+        313        402 1/2014                                                                                               14/02/15 
+Po¿yczka na telewizor                                                                                                                                                                                                                                                                                       
+Wysokoœæ odsetek                                                                                     450.00 zl                                                                                           
+
+        301        403 3/2000                                                                                               00/07/07 
+Zbudowanie altany                                                                                                                                                                                                                                                                                           
+Wysokoœæ kary umownej                                                                                1500.00 zl                                                                                          
+
+        314        403 3/2000                                                                                               00/07/07 
+Zbudowanie altany                                                                                                                                                                                                                                                                                           
+Nazwa obiektu                                                                                        Drewniana altana                                                                                    
+
+        315        403 3/2000                                                                                               00/07/07 
+Zbudowanie altany                                                                                                                                                                                                                                                                                           
+Adres dzialki                                                                                        ul. Wielka 6, 05-245 Warszawa                                                                       
+
+        316        404 2/2018                                                                                               18/04/03 
+Darowizna zegarka                                                                                                                                                                                                                                                                                           
+Przedmiot darowizny                                                                                  Szwajcarski zegarek                                                                                 
+
+        317        405 6/1999                                                                                               99/08/18 
+Wynajem luksusowego apartamentu                                                                                                                                                                                                                                                                             
+Adres lokalu mieszkalnego                                                                            ul. Marszalkowska 7, m. 50, 00-001 Warszawa                                                         
+
+        318        405 6/1999                                                                                               99/08/18 
+Wynajem luksusowego apartamentu                                                                                                                                                                                                                                                                             
+Powierzchnia u¿ytkowa                                                                                140 m^2                                                                                             
+
+        322        406 9/2005                                                                                               05/12/15 
+Dzier¿awa traktora                                                                                                                                                                                                                                                                                          
+Przedmiot dzier¿awy                                                                                  Traktor Renault                                                                                     
+
+        323        407 11/2003                                                                                              03/11/17 
+Dostawa tysiaca palet jaj                                                                                                                                                                                                                                                                                   
+Iloœæ sztuk                                                                                          1000 palet                                                                                          
+
+
+13 rows selected. 
+
+SQL> 
+SQL> -------
+SQL> 
+SQL> select id_wykonawcy, count(*) as ile_umow
+  2  from wykonawca join umowa_cywilnoprawna using (id_wykonawcy)
+  3  group by id_wykonawcy;
+
+ID_WYKONAWCY   ILE_UMOW
+------------ ----------
+         101          1
+         102          1
+         103          1
+         104          1
+         105          1
+         106          1
+         107          1
+
+7 rows selected. 
+
+SQL> 
+SQL> 
+SQL> ------------------------------------
+SQL> 
+SQL> 
+SQL> 
+SQL> spool off

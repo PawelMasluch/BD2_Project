@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FD293364-EAA5-D9D3-B311-B05A79D76FC1" name="DEFINICJA_ATRYBUTU">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 20:49:08 UTC</createdTime>
+<comment><![CDATA[Dane opisujace atrybuty umow cywilnoprawnych.]]></comment>
+<generatorID>4735CC81-DB78-14C5-5E69-C9A916010A29</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ATRYBUTU" id="B9C23437-281B-22D3-EA80-00FE6AA65E16">
+<createdBy>User</createdBy>
+<createdTime>2020-12-08 07:45:33 UTC</createdTime>
+<generatorID>7890C16E-9183-14BD-200A-3507EBD105AC</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAZWA" id="6A364C4C-CF65-C1EE-8FBF-A3DB5527FD33">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 20:49:08 UTC</createdTime>
+<generatorID>7E60B5CA-3873-A8E6-99A3-431DAB5BACFC</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CZY_OPCJONALNA" id="C7A5CEC1-B737-0C27-8D20-78162317CCFE">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 20:49:08 UTC</createdTime>
+<comment><![CDATA[Okreslamy, czy dany atrybut ma byc opcjonalny.
+Jesli atrybut  ma byc obowiazkowy, mamy wartosc 'N'.
+W przeciwnym przypadku, mamy wartosc 'T'.]]></comment>
+<commentInRDBMS><![CDATA[Okreslamy, czy dany atrybut ma byc opcjonalny.
+Jesli atrybut  ma byc obowiazkowy, mamy wartosc 'N'.
+W przeciwnym przypadku, mamy wartosc 'T'.]]></commentInRDBMS>
+<generatorID>C4FA5D8C-FEEA-B2A1-4F06-DDB97014ED07</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYP_DANYCH" id="C16BEFC3-0846-1FF5-01B6-928E78DC0137">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 20:49:08 UTC</createdTime>
+<comment><![CDATA[Typ danych, jaki ma miec nasz atrybut umowy.
+Mozemy podac jedna z 3 wartosci:
+1) 'C' - jeśli typ tekstowy
+2) 'N' - jeśli typ numeryczny
+3) 'D' - jeśli podajemy  date]]></comment>
+<commentInRDBMS><![CDATA[Typ danych, jaki ma miec nasz atrybut umowy.
+Mozemy podac jedna z 3 wartosci:
+1) 'C' - jeśli typ tekstowy
+2) 'N' - jeśli typ numeryczny
+3) 'D' - jeśli podajemy  date]]></commentInRDBMS>
+<generatorID>2D719E8D-F718-AD9E-15DC-800B10EA6FF0</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPIS" id="31BEC7EA-F88D-77BB-C7A0-00DAF4F45D4F">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 20:49:08 UTC</createdTime>
+<generatorID>6FCEB0EE-234D-73F3-52C0-BB3DDC5AF716</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D270B4BF-36F9-0FF2-DE71-1C673615D32C" name="DEFINICJA_ATRYBUTU_PK">
+<createdBy>User</createdBy>
+<createdTime>2020-12-08 07:45:33 UTC</createdTime>
+<generatorID>F14C9489-164C-D142-B8E3-E144E9176762</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9C23437-281B-22D3-EA80-00FE6AA65E16"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9FBF360C-F550-04C5-FBD7-D62A3D1BAA53" name="DEFINICJA_ATRYBUTU_NAZWA_UN">
+<createdBy>User</createdBy>
+<createdTime>2020-12-08 07:45:33 UTC</createdTime>
+<generatorID>B4382692-E42D-9574-EB43-D5D5FCE6A41D</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A364C4C-CF65-C1EE-8FBF-A3DB5527FD33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="DEF_ATR_TYP_DANYCH_CK" directorySegmentName="seg_0" id="BA1B7D68-165F-F920-8DF8-7F99A2CE637E">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 22:56:38 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<rule><![CDATA[typ_danych In('C', 'N', 'D')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="DEF_ATR_CZY_OPCJONALNA_CK" directorySegmentName="seg_0" id="1FE26DF7-A0C7-FE00-3199-50F732D111E7">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 22:58:50 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<rule><![CDATA[czy_opcjonalna In('T', 'N')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

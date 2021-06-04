@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2ACCBA7D-B39D-D6D4-B1FA-3FF02537C93D" name="RODZAJ UMOWY">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 13:50:16 UTC</createdTime>
+<comment><![CDATA[Podstawowe dane o rodzajach umow cywilnoprawnych.]]></comment>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID RODZAJU" id="EEEE32E4-5854-C814-0BAB-4DAF0A77BFCF">
+<createdBy>User</createdBy>
+<createdTime>2020-12-05 13:49:59 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAZWA" id="3BACEF45-7217-DC18-DDB1-314B5F5CB6EB">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 16:20:04 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OPIS" id="2D944026-0BFC-7963-4178-CE5AB94D9223">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 16:20:04 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="68F107C5-D8FE-9312-8A36-FA6D443BDF3D" name="RODZAJ UMOWY PK">
+<createdBy>User</createdBy>
+<createdTime>2020-12-05 13:50:16 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EEEE32E4-5854-C814-0BAB-4DAF0A77BFCF</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="CBD702A9-0055-98D9-7657-6B46DB524669" name="NAZWA">
+<createdBy>User</createdBy>
+<createdTime>2020-12-05 13:55:15 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="false"/>
+</engineerTo>
+<newElementsIDs>3BACEF45-7217-DC18-DDB1-314B5F5CB6EB</newElementsIDs>
+<usedAttributes>
+<attributeRef>3BACEF45-7217-DC18-DDB1-314B5F5CB6EB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

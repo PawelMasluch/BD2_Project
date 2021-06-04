@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B60CCAF0-325A-FC65-F09C-D5EBF6BC8ECD" containerWithKeyObject="F05E9465-2818-33CA-1843-99C76EE0476E" localFKIndex="BCFA0E0D-3657-E190-87CB-1C1344AC8E0F" name="RODZAJ_UMOWY_FK">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:23:54 UTC</createdTime>
+<generatorID>DDCB0307-C2E0-6500-F86A-C2974FE153E5</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<referredTableLongName>RODZAJ_UMOWY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B65D8762-3B31-2437-793B-B3AD287D3F90</referredTableID>
+<keyObject>5496766B-F7EA-2C7D-748C-45096D1FB826</keyObject>
+<referredKeyID>5496766B-F7EA-2C7D-748C-45096D1FB826</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_RODZAJU</refColNames>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

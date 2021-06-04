@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DEFINICJA_ATRYBUTU" directorySegmentName="seg_0" id="FD293364-EAA5-D9D3-B311-B05A79D76FC1">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="OPIS" id="31BEC7EA-F88D-77BB-C7A0-00DAF4F45D4F">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAZWA" id="6A364C4C-CF65-C1EE-8FBF-A3DB5527FD33">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ATRYBUTU" id="B9C23437-281B-22D3-EA80-00FE6AA65E16">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TYP_DANYCH" id="C16BEFC3-0846-1FF5-01B6-928E78DC0137">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CZY_OPCJONALNA" id="C7A5CEC1-B737-0C27-8D20-78162317CCFE">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<synonyms>
+<Synonym class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SynonymOraclev10g" name="DEFINICJA_ATRYBUTU" id="8FC648E4-D33B-0575-05E0-FF1A4DCA18EB">
+<createdBy>User</createdBy>
+<createdTime>2021-01-11 17:55:23 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<objectName>DEFINICJA_ATRYBUTU</objectName>
+<objectUser>C6DE8F25-9082-C7B5-EB06-7CBC6528AB3A</objectUser>
+<user>82043D9D-5DFB-1173-96FD-A7FFC2259DB6</user>
+<referredObjectID>FD293364-EAA5-D9D3-B311-B05A79D76FC1</referredObjectID>
+</Synonym>
+</synonyms>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DEFINICJA_ATRYBUTU_PK" id="D270B4BF-36F9-0FF2-DE71-1C673615D32C">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="DEF_ATR_CZY_OPCJONALNA_CK" id="1FE26DF7-A0C7-FE00-3199-50F732D111E7">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</TableCheckConstraint>
+<TableCheckConstraint name="DEF_ATR_TYP_DANYCH_CK" id="BA1B7D68-165F-F920-8DF8-7F99A2CE637E">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+</TableCheckConstraint>
+</tableCheckConstraints>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="DEFINICJA_ATRYBUTU_NAZWA_UN" id="9FBF360C-F550-04C5-FBD7-D62A3D1BAA53">
+<createdBy>User</createdBy>
+<createdTime>2020-12-31 23:10:29 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

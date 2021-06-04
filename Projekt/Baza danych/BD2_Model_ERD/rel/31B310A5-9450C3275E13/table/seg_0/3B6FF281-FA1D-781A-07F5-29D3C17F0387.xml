@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3B6FF281-FA1D-781A-07F5-29D3C17F0387" name="WARTOSC_ATRYBUTU">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 20:49:08 UTC</createdTime>
+<generatorID>90957D26-740E-D960-7050-E157C8AF31EB</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_RODZAJU" id="8FC56849-ED97-C3E3-6E06-D3BCE2D310D8">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:23:54 UTC</createdTime>
+<generatorID>5A9BA09B-91D3-16F1-ACA0-A3E319CA4F74</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="15C7FDB0-001D-E5A8-51F8-62D39C3357D2" referredColumn="52469C85-FD2D-D3F1-2258-F22E2F8F676A"/>
+<colAssociation fkAssociation="C0C5414C-1314-958D-162B-358D449B87EB" referredColumn="510BA62B-F8BC-6184-CD46-5D4B7EC86C62"/>
+</associations>
+</Column>
+<Column name="ID_UMOWY" id="1D34815D-9EC1-3F3D-36A2-FF7DB3B83D52">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:23:54 UTC</createdTime>
+<generatorID>97C9F121-5011-2418-3807-A95D9B34EFE7</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0C5414C-1314-958D-162B-358D449B87EB" referredColumn="8CEC7614-E270-4A4A-618E-F6CF254C0F22"/>
+</associations>
+</Column>
+<Column name="ID_ATRYBUTU" id="239D62BA-26F7-F9B4-CA5C-CDCD0706BD02">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:45:11 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="15C7FDB0-001D-E5A8-51F8-62D39C3357D2" referredColumn="FD4176BC-7F7F-7FEB-4DE3-862404CD2186"/>
+</associations>
+</Column>
+<Column name="WARTOSC" id="DFEB753A-07A8-9E8B-BF12-8BD8BFA907C2">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 20:49:08 UTC</createdTime>
+<generatorID>231A5788-B71A-721B-48DA-EF7360AEFAB7</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="38C5E788-DAA4-4483-C2B8-A2F603F01AE6" name="WARTOSC_ATRYBUTU_PK">
+<createdBy>User</createdBy>
+<createdTime>2020-12-08 07:45:33 UTC</createdTime>
+<generatorID>A3661953-1B92-033E-47E2-3B81E401AE26</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FC56849-ED97-C3E3-6E06-D3BCE2D310D8"/>
+<colUsage columnID="1D34815D-9EC1-3F3D-36A2-FF7DB3B83D52"/>
+<colUsage columnID="239D62BA-26F7-F9B4-CA5C-CDCD0706BD02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6599274E-E1DF-D6B9-F0C0-0CD34987F29E" name="WARTOSC_ATRYBUTU__IDX">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:54:38 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FC56849-ED97-C3E3-6E06-D3BCE2D310D8"/>
+<colUsage columnID="239D62BA-26F7-F9B4-CA5C-CDCD0706BD02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0121A45F-A63E-0FF6-23C2-805F208BAB28" name="UMOWA_CYWILNOPRAWNA_FK">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:23:54 UTC</createdTime>
+<generatorID>8A38CE43-E7C7-38AD-0663-76A4CCDD65B8</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FC56849-ED97-C3E3-6E06-D3BCE2D310D8"/>
+<colUsage columnID="1D34815D-9EC1-3F3D-36A2-FF7DB3B83D52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="628BE6E8-2FCB-7F0A-3103-6A06049E755C" name="ATRYBUT_RODZAJU_UMOWY_FK">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:45:11 UTC</createdTime>
+<generatorID>F13A81B9-436C-C326-D475-1D88E3651507</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FC56849-ED97-C3E3-6E06-D3BCE2D310D8"/>
+<colUsage columnID="239D62BA-26F7-F9B4-CA5C-CDCD0706BD02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

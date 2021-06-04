@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4735CC81-DB78-14C5-5E69-C9A916010A29" name="DEFINICJA ATRYBUTU">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 13:53:52 UTC</createdTime>
+<comment><![CDATA[Dane opisujace atrybuty umow cywilnoprawnych.]]></comment>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID ATRYBUTU" id="7890C16E-9183-14BD-200A-3507EBD105AC">
+<createdBy>User</createdBy>
+<createdTime>2020-12-05 14:01:39 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAZWA" id="7E60B5CA-3873-A8E6-99A3-431DAB5BACFC">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 16:47:58 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CZY OPCJONALNA" id="C4FA5D8C-FEEA-B2A1-4F06-DDB97014ED07">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 16:47:58 UTC</createdTime>
+<comment><![CDATA[Okreslamy, czy dany atrybut ma byc opcjonalny.
+Jesli atrybut  ma byc obowiazkowy, mamy wartosc 'N'.
+W przeciwnym przypadku, mamy wartosc 'T'.]]></comment>
+<commentInRDBMS><![CDATA[Okreslamy, czy dany atrybut ma byc opcjonalny.
+Jesli atrybut  ma byc obowiazkowy, mamy wartosc 'N'.
+W przeciwnym przypadku, mamy wartosc 'T'.]]></commentInRDBMS>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TYP DANYCH" id="2D719E8D-F718-AD9E-15DC-800B10EA6FF0">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 16:47:59 UTC</createdTime>
+<comment><![CDATA[Typ danych, jaki ma miec nasz atrybut umowy.
+Mozemy podac jedna z 3 wartosci:
+1) 'C' - jeśli typ tekstowy
+2) 'N' - jeśli typ numeryczny
+3) 'D' - jeśli podajemy  date]]></comment>
+<commentInRDBMS><![CDATA[Typ danych, jaki ma miec nasz atrybut umowy.
+Mozemy podac jedna z 3 wartosci:
+1) 'C' - jeśli typ tekstowy
+2) 'N' - jeśli typ numeryczny
+3) 'D' - jeśli podajemy  date]]></commentInRDBMS>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OPIS" id="6FCEB0EE-234D-73F3-52C0-BB3DDC5AF716">
+<createdBy>User</createdBy>
+<createdTime>2020-12-04 16:47:59 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F14C9489-164C-D142-B8E3-E144E9176762" name="DEFINICJA ATRYBUTU PK">
+<createdBy>User</createdBy>
+<createdTime>2020-12-05 14:01:59 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7890C16E-9183-14BD-200A-3507EBD105AC</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="B4382692-E42D-9574-EB43-D5D5FCE6A41D" name="NAZWA">
+<createdBy>User</createdBy>
+<createdTime>2020-12-05 14:02:19 UTC</createdTime>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="31B310A5-7897-9F19-E72F-9450C3275E13" value="false"/>
+</engineerTo>
+<newElementsIDs>7E60B5CA-3873-A8E6-99A3-431DAB5BACFC</newElementsIDs>
+<usedAttributes>
+<attributeRef>7E60B5CA-3873-A8E6-99A3-431DAB5BACFC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

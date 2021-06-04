@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="43859356-F5C5-D53F-265C-789A7D11A84C" containerWithKeyObject="F05E9465-2818-33CA-1843-99C76EE0476E" localFKIndex="11AC79E4-72FB-C96B-E333-11F13322D5E3" name="WYKONAWCA_FK">
+<createdBy>User</createdBy>
+<createdTime>2021-01-05 20:23:54 UTC</createdTime>
+<generatorID>54584D02-5E67-2638-E1BB-22C7EBAF8C73</generatorID>
+<ownerDesignName>BD2_Model_ERD</ownerDesignName>
+<referredTableLongName>WYKONAWCA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9C829412-7147-A65C-9DEA-007F342E7E3E</referredTableID>
+<keyObject>E8085C3E-CE94-3B4F-620E-5B94EA830FC2</keyObject>
+<referredKeyID>E8085C3E-CE94-3B4F-620E-5B94EA830FC2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_WYKONAWCY</refColNames>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
