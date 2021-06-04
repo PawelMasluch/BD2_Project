@@ -2,11 +2,6 @@
 Projekt BD2 grupa wykładowa 1 – zadania
 Semestr 20Z
 
-Pierwszą część projektu prowadzi doc. dr inż. Tomasz Traczyk.
-
-Uwaga: Wszelkie wątpliwości dotyczące treści zadań powinny być pilnie wyjaśnione z prowadzącym; w tym celu należy korzystać z poczty elektronicznej.
-Ze względu na zawieszenie "fizycznych" zajęć i brak możliwości osobistego wypytania o co chodzi w zadaniu, usilnie namawiam do pilnego wyjaśniania wszelkich wątpliwości tą drogą.
-
 Zadanie 1. Monitorowanie dysków
 
 Baza danych rejestruje wyniki monitorowania dysków dużego archiwum dyskowego. Dyski są różnych typów; dla każdego z typów pamiętane są: kod typu, producent, rodzaj dysku: HDD/SSD, nominalna pojemność. Dla każdego dysku pamiętać trzeba numer seryjny, status: dobry/wątpliwy/zepsuty oraz daty: produkcji, zamontowania w systemie i wycofania z użycia. Z dysków odczytuje się co określony czas i umieszcza w bazie danych wartości parametrów S.M.A.R.T. Lista tych parametrów jest wspólna, ale każdy z typów dysków używa innego ich podzbioru.
