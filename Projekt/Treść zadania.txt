@@ -1,4 +1,6 @@
-Zadanie 2. Umowy cywilnoprawne
+Zadanie. 
+Umowy cywilnoprawne
+
 System informatyczny ma służyć 
 do drukowania umów cywilnoprawnych 
 dla wykonawców - stałych współpracowników
