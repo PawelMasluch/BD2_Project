@@ -1,4 +1,4 @@
-# BD2_Project
+# BD2_Project (en)
  
  Copyright (C) Paweł Maśluch, 2021. All rights reserved.
  
